@@ -1,15 +1,48 @@
-[gd_scene load_steps=3 format=3 uid="uid://s6wylvs0xk1x"]
+[gd_scene load_steps=8 format=3 uid="uid://s6wylvs0xk1x"]
 
-[ext_resource type="Texture2D" uid="uid://lvtodp83m7fv" path="res://loud-3055527891.jpg" id="1_ctxo3"]
-[ext_resource type="Texture2D" uid="uid://i46t2rnn40d" path="res://icon.svg" id="2_jy3w5"]
+[ext_resource type="Texture2D" uid="uid://bhwxrkg4g7cc" path="res://Ocean-underwater-light-wallpaper-hd-683073489.jpg" id="1_co4nl"]
+[ext_resource type="Texture2D" uid="uid://80s8a15scgny" path="res://Sand-Transparent-PNG-420229870.png" id="2_5mw0n"]
+[ext_resource type="Texture2D" uid="uid://bv7vrpnm74400" path="res://ac098a8156bb8b1568b2f161b1ed3baf-2627024328.png" id="3_hk20x"]
+[ext_resource type="Texture2D" uid="uid://odgkr7pd3qvn" path="res://a40e649500b3cd0f8ee53a0b89386598-3666411819.png" id="4_bptul"]
+[ext_resource type="Texture2D" uid="uid://c1jagomm4t0in" path="res://jellyfish_PNG44-1949837823.png" id="5_1fixa"]
+[ext_resource type="Texture2D" uid="uid://t4lpf3wrmamf" path="res://Shark-4187738541.png" id="6_qb16f"]
+[ext_resource type="Texture2D" uid="uid://cfdgsd73ppn7v" path="res://Goldfish-PNG-Photo-2127333797.png" id="7_2vvll"]
 
 [node name="Main Scene" type="Node2D"]
 
-[node name="Loud-3055527891" type="Sprite2D" parent="."]
-modulate = Color(0.486275, 0.529412, 1, 1)
-position = Vector2(937, 371)
-texture = ExtResource("1_ctxo3")
+[node name="Ocean-underwater-light-wallpaper-hd-683073489" type="Sprite2D" parent="."]
+position = Vector2(590, -6)
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("1_co4nl")
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(1081, 72)
-texture = ExtResource("2_jy3w5")
+[node name="Sand-transparent-png-420229870" type="Sprite2D" parent="Ocean-underwater-light-wallpaper-hd-683073489"]
+position = Vector2(2.17395, 1310.87)
+scale = Vector2(2.62889, 2.17391)
+texture = ExtResource("2_5mw0n")
+
+[node name="Ac098a8156Bb8b1568b2f161b1Ed3Baf-2627024328" type="Sprite2D" parent="Ocean-underwater-light-wallpaper-hd-683073489/Sand-transparent-png-420229870"]
+position = Vector2(-309.065, 21)
+scale = Vector2(0.106812, 0.129167)
+texture = ExtResource("3_hk20x")
+
+[node name="A40e649500b3Cd0f8Ee53a0b89386598-3666411819" type="Sprite2D" parent="Ocean-underwater-light-wallpaper-hd-683073489/Sand-transparent-png-420229870"]
+position = Vector2(-412.432, 8)
+scale = Vector2(0.327551, 0.396104)
+texture = ExtResource("4_bptul")
+
+[node name="JellyfishPng44-1949837823" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.556863)
+position = Vector2(89.0001, 138)
+scale = Vector2(0.347316, 0.347316)
+texture = ExtResource("5_1fixa")
+
+[node name="Goldfish-png-photo-2127333797" type="Sprite2D" parent="."]
+position = Vector2(511, 470)
+scale = Vector2(0.100372, 0.100372)
+texture = ExtResource("7_2vvll")
+
+[node name="Shark-4187738541" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.690196)
+position = Vector2(1005, 464)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_qb16f")
