@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://s6wylvs0xk1x"]
+
+[ext_resource type="Texture2D" uid="uid://lvtodp83m7fv" path="res://loud-3055527891.jpg" id="1_ctxo3"]
+[ext_resource type="Texture2D" uid="uid://i46t2rnn40d" path="res://icon.svg" id="2_jy3w5"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="Loud-3055527891" type="Sprite2D" parent="."]
+modulate = Color(0.486275, 0.529412, 1, 1)
+position = Vector2(937, 371)
+texture = ExtResource("1_ctxo3")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(1081, 72)
+texture = ExtResource("2_jy3w5")
