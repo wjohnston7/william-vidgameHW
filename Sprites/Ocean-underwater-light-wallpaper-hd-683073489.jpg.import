@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhwxrkg4g7cc"
-path="res://.godot/imported/Ocean-underwater-light-wallpaper-hd-683073489.jpg-2f08d59f0b1d889d9b864138c1489c50.ctex"
+path="res://.godot/imported/Ocean-underwater-light-wallpaper-hd-683073489.jpg-578b496687dd487167629cf432c799b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ocean-underwater-light-wallpaper-hd-683073489.jpg"
-dest_files=["res://.godot/imported/Ocean-underwater-light-wallpaper-hd-683073489.jpg-2f08d59f0b1d889d9b864138c1489c50.ctex"]
+source_file="res://Sprites/Ocean-underwater-light-wallpaper-hd-683073489.jpg"
+dest_files=["res://.godot/imported/Ocean-underwater-light-wallpaper-hd-683073489.jpg-578b496687dd487167629cf432c799b1.ctex"]
 
 [params]
 

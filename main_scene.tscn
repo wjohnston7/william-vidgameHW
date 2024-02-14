@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://s6wylvs0xk1x"]
 
-[ext_resource type="Texture2D" uid="uid://bhwxrkg4g7cc" path="res://Ocean-underwater-light-wallpaper-hd-683073489.jpg" id="1_co4nl"]
-[ext_resource type="Texture2D" uid="uid://80s8a15scgny" path="res://Sand-Transparent-PNG-420229870.png" id="2_5mw0n"]
-[ext_resource type="Texture2D" uid="uid://bv7vrpnm74400" path="res://ac098a8156bb8b1568b2f161b1ed3baf-2627024328.png" id="3_hk20x"]
-[ext_resource type="Texture2D" uid="uid://odgkr7pd3qvn" path="res://a40e649500b3cd0f8ee53a0b89386598-3666411819.png" id="4_bptul"]
-[ext_resource type="Texture2D" uid="uid://c1jagomm4t0in" path="res://jellyfish_PNG44-1949837823.png" id="5_1fixa"]
-[ext_resource type="Texture2D" uid="uid://t4lpf3wrmamf" path="res://Shark-4187738541.png" id="6_qb16f"]
-[ext_resource type="Texture2D" uid="uid://cfdgsd73ppn7v" path="res://Goldfish-PNG-Photo-2127333797.png" id="7_2vvll"]
+[ext_resource type="Texture2D" uid="uid://bhwxrkg4g7cc" path="res://Sprites/Ocean-underwater-light-wallpaper-hd-683073489.jpg" id="1_co4nl"]
+[ext_resource type="Texture2D" uid="uid://80s8a15scgny" path="res://Sprites/Sand-Transparent-PNG-420229870.png" id="2_5mw0n"]
+[ext_resource type="Texture2D" uid="uid://bgufkkxwkt23r" path="res://Sprites/brain-coral.png" id="3_hk20x"]
+[ext_resource type="Texture2D" uid="uid://b8qlhtkycmw3r" path="res://Sprites/coral.png" id="4_bptul"]
+[ext_resource type="Texture2D" uid="uid://c1jagomm4t0in" path="res://Sprites/jellyfish_PNG44-1949837823.png" id="5_1fixa"]
+[ext_resource type="Texture2D" uid="uid://t4lpf3wrmamf" path="res://Sprites/Shark-4187738541.png" id="6_qb16f"]
+[ext_resource type="Texture2D" uid="uid://cfdgsd73ppn7v" path="res://Sprites/Goldfish-PNG-Photo-2127333797.png" id="7_2vvll"]
 
 [node name="Main Scene" type="Node2D"]
 

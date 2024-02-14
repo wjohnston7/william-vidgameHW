@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://80s8a15scgny"
-path="res://.godot/imported/Sand-Transparent-PNG-420229870.png-9bebb14dc5e4ca179efafaa5c7e52d70.ctex"
+uid="uid://b8qlhtkycmw3r"
+path="res://.godot/imported/coral.png-f198faf034e5173fcc513cc5c41aad52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sand-Transparent-PNG-420229870.png"
-dest_files=["res://.godot/imported/Sand-Transparent-PNG-420229870.png-9bebb14dc5e4ca179efafaa5c7e52d70.ctex"]
+source_file="res://Sprites/coral.png"
+dest_files=["res://.godot/imported/coral.png-f198faf034e5173fcc513cc5c41aad52.ctex"]
 
 [params]
 

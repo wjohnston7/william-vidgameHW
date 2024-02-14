@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfdgsd73ppn7v"
-path="res://.godot/imported/Goldfish-PNG-Photo-2127333797.png-95e1d72b7c642ce4292302d04c938ce5.ctex"
+path="res://.godot/imported/Goldfish-PNG-Photo-2127333797.png-9872bedb2270eeeb3a1398c15b16204a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Goldfish-PNG-Photo-2127333797.png"
-dest_files=["res://.godot/imported/Goldfish-PNG-Photo-2127333797.png-95e1d72b7c642ce4292302d04c938ce5.ctex"]
+source_file="res://Sprites/Goldfish-PNG-Photo-2127333797.png"
+dest_files=["res://.godot/imported/Goldfish-PNG-Photo-2127333797.png-9872bedb2270eeeb3a1398c15b16204a.ctex"]
 
 [params]
 
