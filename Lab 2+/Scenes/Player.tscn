@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://dspo7rjjqprtm"]
+
+[ext_resource type="Texture2D" uid="uid://lwwtm0hb5wsd" path="res://Sprites/sheets/DinoSprites - mort.png" id="1_goj3b"]
+[ext_resource type="Script" path="res://Scenes/player.gd" id="2_htm8p"]
+[ext_resource type="Script" path="res://Scripts/CollisionShape2D2.gd" id="3_2ejp5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1c85c"]
+atlas = ExtResource("1_goj3b")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7osod"]
+atlas = ExtResource("1_goj3b")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5suc"]
+atlas = ExtResource("1_goj3b")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_43vtf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c85c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7osod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5suc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_op3hf"]
+size = Vector2(8, 17)
+
+[node name="Player" type="AnimatedSprite2D"]
+position = Vector2(120, 68.5)
+scale = Vector2(5.75, 5.04167)
+sprite_frames = SubResource("SpriteFrames_43vtf")
+animation = &"idle"
+script = ExtResource("2_htm8p")
+speed = 3.5
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_op3hf")
+script = ExtResource("3_2ejp5")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="tree_entered" from="CharacterBody2D/CollisionShape2D" to="CharacterBody2D/CollisionShape2D" method="_on_tree_entered"]

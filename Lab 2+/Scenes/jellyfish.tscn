@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhosa64i2686f"]
+
+[ext_resource type="Script" path="res://Scripts/jellyfish.gd" id="1_4jbi1"]
+[ext_resource type="Texture2D" uid="uid://dr4s1me58f3lw" path="res://Sprites/jellyfish_PNG44-1949837823.png" id="1_vcgrj"]
+[ext_resource type="Script" path="res://Scripts/CollisionShape2D.gd" id="3_ligbs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_531yn"]
+radius = 137.327
+height = 696.379
+
+[node name="Jellyfish" type="Node2D"]
+script = ExtResource("1_4jbi1")
+
+[node name="JellyfishPng44-1949837823" type="Sprite2D" parent="."]
+position = Vector2(1054, 253)
+scale = Vector2(0.212528, 0.212528)
+texture = ExtResource("1_vcgrj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="JellyfishPng44-1949837823"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JellyfishPng44-1949837823/StaticBody2D"]
+position = Vector2(-14.1157, 65.8738)
+rotation = 0.261799
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_531yn")
+script = ExtResource("3_ligbs")
+
+[connection signal="tree_entered" from="JellyfishPng44-1949837823/StaticBody2D/CollisionShape2D" to="." method="_on_collision_shape_2d_tree_entered"]

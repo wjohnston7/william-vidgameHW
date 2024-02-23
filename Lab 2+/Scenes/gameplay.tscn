@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://coha7ulbfxf48"]
+
+[ext_resource type="Texture2D" uid="uid://cr11x1mqb7ee1" path="res://Sprites/Ocean-underwater-light-wallpaper-hd-683073489.jpg" id="1_74dtp"]
+[ext_resource type="PackedScene" uid="uid://dspo7rjjqprtm" path="res://Scenes/Player.tscn" id="1_1103k"]
+[ext_resource type="Script" path="res://Scripts/gameplay.gd" id="1_idpal"]
+[ext_resource type="PackedScene" uid="uid://dhosa64i2686f" path="res://Scenes/jellyfish.tscn" id="3_2g06w"]
+[ext_resource type="Texture2D" uid="uid://bmuus7mq3c6gr" path="res://Sprites/Sand-Transparent-PNG-420229870.png" id="3_6e08h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e0eiq"]
+size = Vector2(1195, 291)
+
+[node name="Gameplay" type="Node2D"]
+script = ExtResource("1_idpal")
+
+[node name="Ocean-underwater-light-wallpaper-hd-683073489" type="Sprite2D" parent="."]
+position = Vector2(618, 197)
+scale = Vector2(0.503333, 0.503333)
+texture = ExtResource("1_74dtp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="Sand-transparent-png-420229870" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(575.25, 492)
+scale = Vector2(1.16434, 1)
+texture = ExtResource("3_6e08h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(579, 648)
+shape = SubResource("RectangleShape2D_e0eiq")
+
+[node name="Panel" type="Panel" parent="StaticBody2D"]
+offset_left = -11.0
+offset_top = 507.0
+offset_right = 1168.0
+offset_bottom = 591.0
+
+[node name="Sand-transparent-png-420229870" type="Sprite2D" parent="."]
+position = Vector2(584, 526)
+scale = Vector2(1.18731, 1)
+texture = ExtResource("3_6e08h")
+
+[node name="Player" parent="." instance=ExtResource("1_1103k")]
+position = Vector2(274, 455)
+scale = Vector2(10, 10)
+disable_mode = 2
+
+[node name="Jellyfish" parent="." instance=ExtResource("3_2g06w")]
+position = Vector2(194, 223)
+
+[node name="Jellyfish2" parent="." instance=ExtResource("3_2g06w")]
+position = Vector2(660, 221)
+
+[node name="Jellyfish3" parent="." instance=ExtResource("3_2g06w")]
+position = Vector2(1220, 209)
