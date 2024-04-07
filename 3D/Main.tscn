@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdyadphu3872o"]
+
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="1_7cf0a"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0t5r3"]
+sky_top_color = Color(0.470588, 0.666667, 1, 1)
+sky_horizon_color = Color(0.704902, 0.742157, 0.811765, 1)
+ground_bottom_color = Color(0.34902, 0.301961, 0.247059, 1)
+ground_horizon_color = Color(0.704902, 0.742157, 0.811765, 1)
+
+[sub_resource type="Sky" id="Sky_1i04u"]
+sky_material = SubResource("ProceduralSkyMaterial_0t5r3")
+
+[sub_resource type="Environment" id="Environment_70dfj"]
+background_mode = 2
+sky = SubResource("Sky_1i04u")
+tonemap_mode = 2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lxwvi"]
+height = 2.08445
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_grsgt"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_70dfj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, -0.000244329, 2.71484e-06, 0.0002076, 0.855428, 0.517922, -0.000128866, -0.517922, 0.855428, 3.18941, 5.85285, 4.77547)
+light_color = Color(1, 0, 1, 1)
+light_energy = 11.02
+
+[node name="level" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="level"]
+transform = Transform3D(0.990229, 0, 0, 0, 0.990229, 0, 0, 0, 0.990229, 1.18158, 1.06549, 0.266357)
+use_collision = true
+size = Vector3(3.36316, 3.13098, 0.467285)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="level"]
+transform = Transform3D(1.19521, 0, 0, 0, 1.01371, 0, 0, 0, 0.980554, 5.40355, 1.14076, 0.274288)
+use_collision = true
+size = Vector3(3.36316, 3.13098, 0.467285)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.13719, -0.741222, 3.15702)
+use_collision = true
+size = Vector3(2.77051, 1, 6.48132)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+script = ExtResource("1_7cf0a")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03169, 0.820306, 3.14767)
+shape = SubResource("CapsuleShape3D_lxwvi")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.06028, 0.85572, 3.06747)
+mesh = SubResource("CapsuleMesh_grsgt")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(0.999999, 0.000993516, -0.000616714, -0.000855138, 0.981035, 0.193828, 0.000797589, -0.193827, 0.981035, 2.96826, 1.80722, 6.6785)
+fov = 40.0687
