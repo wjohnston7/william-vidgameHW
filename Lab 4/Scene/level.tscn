@@ -35,37 +35,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 [node name="Player1" parent="." instance=ExtResource("3_bxdjm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04874, 1.19288, 5.75256)
 
-[node name="Mazelight1" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.700909, 0.504344, -0.504344, 2.4663e-16, 0.707107, 0.707107, 0.71325, -0.495618, 0.495618, -2.46858, 5.37986, 3.98306)
+[node name="Mazelight1" type="OmniLight3D" parent="."]
+transform = Transform3D(0.700909, 0.504344, -0.504344, 2.4663e-16, 0.707107, 0.707107, 0.71325, -0.495618, 0.495618, -2.29741, 3, 3.86288)
 light_color = Color(1, 0.952941, 0.709804, 1)
-light_energy = 0.25
+light_energy = 0.15
 light_indirect_energy = 0.125
 shadow_enabled = true
-sky_mode = 1
 
-[node name="Mazelight2" type="DirectionalLight3D" parent="."]
+[node name="Mazelight2" type="OmniLight3D" parent="."]
 transform = Transform3D(-0.866025, 0.353553, -0.353553, 2.4663e-16, 0.707107, 0.707107, 0.5, 0.612372, -0.612372, -2.46858, 5.37986, -4.01694)
 light_color = Color(1, 0.952941, 0.709804, 1)
 light_energy = 0.25
 light_indirect_energy = 0.125
 shadow_enabled = true
-sky_mode = 1
 
-[node name="Mazelight3" type="DirectionalLight3D" parent="."]
+[node name="Mazelight3" type="OmniLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.353553, 0.353553, 1.17062e-08, 0.707107, 0.707107, -0.5, 0.612372, -0.612372, 2.53142, 5.37986, -4.01694)
 light_color = Color(1, 0.952941, 0.709804, 1)
 light_energy = 0.25
 light_indirect_energy = 0.125
 shadow_enabled = true
-sky_mode = 1
 
-[node name="Mazelight4" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.707107, -0.5, 0.5, 1.17062e-08, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2.53142, 5.37986, 3.98306)
+[node name="Mazelight4" type="OmniLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 1.17062e-08, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2.40388, 3, 3.84621)
 light_color = Color(1, 0.952941, 0.709804, 1)
-light_energy = 0.25
+light_energy = 0.15
 light_indirect_energy = 0.125
 shadow_enabled = true
-sky_mode = 1
 
 [node name="Wall" parent="." instance=ExtResource("1_s4mno")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
