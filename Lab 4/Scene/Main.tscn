@@ -48,6 +48,7 @@ light_indirect_energy = 0.25
 shadow_enabled = true
 shadow_opacity = 0.25
 shadow_blur = 5.0
+sky_mode = 1
 
 [node name="Level" type="Node3D" parent="."]
 

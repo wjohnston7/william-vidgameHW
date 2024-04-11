@@ -67,4 +67,4 @@ mesh = SubResource("CapsuleMesh_ivimw")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.56633, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Neck"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.8242, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.178415, 0)
