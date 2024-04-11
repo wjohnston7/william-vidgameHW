@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3qy7nplcnynq"
+path="res://.godot/imported/CountrySide-1-Vegetation2.obj-ebabe536eef3262be0b875b46a638a7d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/CountrySide-1-Vegetation2.obj-ebabe536eef3262be0b875b46a638a7d.mesh"]
+
+source_file="res://CountrysideENV/Obj/CountrySide-1-Vegetation2.obj"
+dest_files=["res://.godot/imported/CountrySide-1-Vegetation2.obj-ebabe536eef3262be0b875b46a638a7d.mesh", "res://.godot/imported/CountrySide-1-Vegetation2.obj-ebabe536eef3262be0b875b46a638a7d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
